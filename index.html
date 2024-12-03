@@ -20,30 +20,37 @@
             text-align: center;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+		.container {
+		    max-width: 800px;
+		    margin: 0 auto;
+		    padding: 20px;
+		    display: flex;
+		    flex-direction: column; /* Stack items vertically */
+		    align-items: center; /* Center horizontally */
+		}
+		
+		.project-card {
+		    background: white;
+		    border-radius: 8px;
+		    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		    margin-bottom: 20px; /* Spacing between cards */
+		    width: 100%; /* Make card full width */
+		    max-width: 600px; /* Optional: Restrict max width */
+		    overflow: hidden;
+		    transition: transform 0.2s;
+		}
+		
+		.project-card img {
+		    width: 100%; /* Image spans full card width */
+		    height: auto; /* Maintain aspect ratio */
+		}
 
-        .project-card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            overflow: hidden;
-            transition: transform 0.2s;
-        }
 
         .project-card:hover {
             transform: translateY(-5px);
         }
 
-        .project-card img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+
 
         .project-card .content {
             padding: 15px;
@@ -66,22 +73,70 @@
         <h1>My Project Showcase</h1>
     </header>
 
-    <div class="container">
-        <div class="project-card">
-            <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/UV_Test_Rig.gif" alt="UV Test Rig GIF">
-            <div class="content">
-                <h3>Project 1: UV Test Rig</h3>
-                <p>Developed a UV test rig for advanced material testing. Demonstrates system integration and automation skills.</p>
-            </div>
-        </div>
-        <div class="project-card">
-            <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/UV_Test_Rig.gif" alt="Another GIF">
-            <div class="content">
-                <h3>Project 2: Another GIF</h3>
-                <p>Explored automation in industrial environments. Includes improvements in speed and reliability.</p>
-            </div>
-        </div>
-        <!-- Repeat cards for additional projects -->
+	<div class="container">
+	    <div class="project-card">
+	        <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/UV_Test_Rig.gif" alt="UV Test Rig GIF">
+	        <div class="content">
+	            <h3>Project 1: UV Test Rig</h3>
+	            <p>Developed a UV test rig for advanced material testing. Demonstrates system integration and automation skills.</p>
+	        </div>
+	    </div>
+	    <div class="project-card">
+	        <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/UV_Test_Rig.gif" alt="Another GIF">
+	        <div class="content">
+	            <h3>Project 2: Another GIF</h3>
+	            <p>Explored automation in industrial environments. Includes improvements in speed and reliability.</p>
+	        </div>
+	    </div>
+	    <div class="project-card">
+	        <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/Autocad.gif" alt="AutoCAD GIF">
+	        <div class="content">
+	            <h3>Project 3: AutoCAD Integration</h3>
+	            <p>Created a system to automate designs and drafts using AutoCAD software. Focuses on streamlining design workflows.</p>
+	        </div>
+	    </div>
+	    <div class="project-card">
+	        <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/BallLight.gif" alt="Ball Light GIF">
+	        <div class="content">
+	            <h3>Project 4: Ball Light Automation</h3>
+	            <p>Developed a lighting control system that integrates with spherical designs. Demonstrates advanced control and monitoring features.</p>
+	        </div>
+	    </div>
+	    <div class="project-card">
+	        <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/MiniP.gif" alt="MiniP GIF">
+	        <div class="content">
+	            <h3>Project 5: MiniP System</h3>
+	            <p>Built a compact and efficient power distribution system for small-scale applications. Focuses on minimizing energy loss.</p>
+	        </div>
+	    </div>
+	    <div class="project-card">
+	        <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/Pressure.gif" alt="Pressure Control GIF">
+	        <div class="content">
+	            <h3>Project 6: Pressure Control System</h3>
+	            <p>Designed a pressure control system for industrial machines, improving accuracy and safety in operations.</p>
+	        </div>
+	    </div>
+	    <div class="project-card">
+	        <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/Tetris.gif" alt="Tetris Game GIF">
+	        <div class="content">
+	            <h3>Project 7: Tetris Game</h3>
+	            <p>Developed a custom version of the classic Tetris game using interactive design principles. Features real-time control and score tracking.</p>
+	        </div>
+	    </div>
+	    <div class="project-card">
+	        <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/Turret.gif" alt="Turret System GIF">
+	        <div class="content">
+	            <h3>Project 8: Turret Control System</h3>
+	            <p>Built an automated turret system with motion tracking and precision targeting. A demonstration of robotic control and feedback systems.</p>
+	        </div>
+	    </div>
+	    <div class="project-card">
+	        <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/c_game.gif" alt="C Game GIF">
+	        <div class="content">
+	            <h3>Project 9: C Game Development</h3>
+	            <p>Created an interactive game using the C programming language. Features customizable settings and multi-level gameplay.</p>
+	        </div>
+	    </div>
     </div>
 </body>
 </html>
