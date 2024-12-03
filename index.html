@@ -21,21 +21,16 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-        }
-
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
         }
 
         .project-card {
             background: white;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
             overflow: hidden;
             transition: transform 0.2s;
         }
@@ -56,12 +51,12 @@
 
         .project-card h3 {
             margin: 0 0 10px;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
 
         .project-card p {
             margin: 0;
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: #555;
         }
     </style>
@@ -72,23 +67,21 @@
     </header>
 
     <div class="container">
-        <div class="project-grid">
-            <div class="project-card">
-                <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/UV_Test_Rig.gif" alt="UV Test Rig GIF">
-                <div class="content">
-                    <h3>Project 1: UV Test Rig</h3>
-                    <p>Developed a UV test rig for advanced material testing. Demonstrates system integration and automation skills.</p>
-                </div>
+        <div class="project-card">
+            <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/UV_Test_Rig.gif" alt="UV Test Rig GIF">
+            <div class="content">
+                <h3>Project 1: UV Test Rig</h3>
+                <p>Developed a UV test rig for advanced material testing. Demonstrates system integration and automation skills.</p>
             </div>
-            <div class="project-card">
-                <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/UV_Test_Rig.gif" alt="Another GIF">
-                <div class="content">
-                    <h3>Project 2: Another GIF</h3>
-                    <p>Explored automation in industrial environments. Includes improvements in speed and reliability.</p>
-                </div>
-            </div>
-            <!-- Repeat cards for additional projects -->
         </div>
+        <div class="project-card">
+            <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/UV_Test_Rig.gif" alt="Another GIF">
+            <div class="content">
+                <h3>Project 2: Another GIF</h3>
+                <p>Explored automation in industrial environments. Includes improvements in speed and reliability.</p>
+            </div>
+        </div>
+        <!-- Repeat cards for additional projects -->
     </div>
 </body>
 </html>
