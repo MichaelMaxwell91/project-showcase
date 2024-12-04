@@ -20,37 +20,34 @@
             text-align: center;
         }
 
-		.container {
-		    max-width: 800px;
-		    margin: 0 auto;
-		    padding: 20px;
-		    display: flex;
-		    flex-direction: column; /* Stack items vertically */
-		    align-items: center; /* Center horizontally */
-		}
-		
-		.project-card {
-		    background: white;
-		    border-radius: 8px;
-		    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-		    margin-bottom: 20px; /* Spacing between cards */
-		    width: 100%; /* Make card full width */
-		    max-width: 600px; /* Optional: Restrict max width */
-		    overflow: hidden;
-		    transition: transform 0.2s;
-		}
-		
-		.project-card img {
-		    width: 100%; /* Image spans full card width */
-		    height: auto; /* Maintain aspect ratio */
-		}
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+        }
 
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+        }
 
         .project-card:hover {
             transform: translateY(-5px);
         }
-
-
 
         .project-card .content {
             padding: 15px;
@@ -66,77 +63,122 @@
             font-size: 1rem;
             color: #555;
         }
+
+        .side-by-side-gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .side-by-side-gallery .images {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .side-by-side-gallery .images img {
+            max-width: 45%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .side-by-side-gallery .description {
+            text-align: center;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            max-width: 80%;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>My Project Showcase</h1>
+        <h1>Project Showcase</h1>
     </header>
 
-	<div class="container">
-	    <div class="project-card">
-	        <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/UV_Test_Rig.gif" alt="UV Test Rig GIF">
-	        <div class="content">
-	            <h3>Project 1: UV Test Rig</h3>
-	            <p>Developed a UV test rig for advanced material testing. Demonstrates system integration and automation skills.</p>
-	        </div>
-	    </div>
-	    <div class="project-card">
-	        <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/UV_Test_Rig.gif" alt="Another GIF">
-	        <div class="content">
-	            <h3>Project 2: Another GIF</h3>
-	            <p>Explored automation in industrial environments. Includes improvements in speed and reliability.</p>
-	        </div>
-	    </div>
-	    <div class="project-card">
-	        <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/Autocad.gif" alt="AutoCAD GIF">
-	        <div class="content">
-	            <h3>Project 3: AutoCAD Integration</h3>
-	            <p>Created a system to automate designs and drafts using AutoCAD software. Focuses on streamlining design workflows.</p>
-	        </div>
-	    </div>
-	    <div class="project-card">
-	        <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/BallLight.gif" alt="Ball Light GIF">
-	        <div class="content">
-	            <h3>Project 4: Ball Light Automation</h3>
-	            <p>Developed a lighting control system that integrates with spherical designs. Demonstrates advanced control and monitoring features.</p>
-	        </div>
-	    </div>
-	    <div class="project-card">
-	        <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/MiniP.gif" alt="MiniP GIF">
-	        <div class="content">
-	            <h3>Project 5: MiniP System</h3>
-	            <p>Built a compact and efficient power distribution system for small-scale applications. Focuses on minimizing energy loss.</p>
-	        </div>
-	    </div>
-	    <div class="project-card">
-	        <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/Pressure.gif" alt="Pressure Control GIF">
-	        <div class="content">
-	            <h3>Project 6: Pressure Control System</h3>
-	            <p>Designed a pressure control system for industrial machines, improving accuracy and safety in operations.</p>
-	        </div>
-	    </div>
-	    <div class="project-card">
-	        <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/Tetris.gif" alt="Tetris Game GIF">
-	        <div class="content">
-	            <h3>Project 7: Tetris Game</h3>
-	            <p>Developed a custom version of the classic Tetris game using interactive design principles. Features real-time control and score tracking.</p>
-	        </div>
-	    </div>
-	    <div class="project-card">
-	        <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/Turret.gif" alt="Turret System GIF">
-	        <div class="content">
-	            <h3>Project 8: Turret Control System</h3>
-	            <p>Built an automated turret system with motion tracking and precision targeting. A demonstration of robotic control and feedback systems.</p>
-	        </div>
-	    </div>
-	    <div class="project-card">
-	        <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/c_game.gif" alt="C Game GIF">
-	        <div class="content">
-	            <h3>Project 9: C Game Development</h3>
-	            <p>Created an interactive game using the C programming language. Features customizable settings and multi-level gameplay.</p>
-	        </div>
-	    </div>
+    <div class="container">
+<div class="project-card">
+    <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/LSINC_Promo_1.gif" alt="Printer Promo">
+    <div class="content">
+        <h3>Direct-to-Object Printers</h3>
+        <p>I contributed to the development of HMI interfaces and motion control programs for several direct-to-object printer models. I supported the design of control panel layouts, PLC programming, and error-proofing systems to enhance reliability and efficiency.</p>
+        <p>One of the projects I worked on was the PeriQ360, a four-tunnel printer with six print heads per tunnel. This system utilized Parker linear drives, Kollmorgen rotary drives, and Trio-controlled stepper motors. My role included assisting with system setup, optimizing control parameters, and ensuring the system met performance expectations.</p>
+    </div>
+</div>
+
+<div class="project-card">
+    <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/MiniP.gif" alt="MiniP GIF">
+    <div class="content">
+        <h3>MiniP Printer</h3>
+        <p>I worked on the MiniP Printer, a system with six print heads capable of printing on 3D media contours. My contributions included programming PLCs for synchronized motion control and helping optimize the system for consistent quality and throughput.</p>
+    </div>
+</div>
+
+<div class="project-card">
+    <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/Turret.gif" alt="Turret System GIF">
+    <div class="content">
+        <h3>Turret Printer</h3>
+        <p>This project involved a multi-station rapid printer that applied primer, CMYK, and clear coat. I supported the design and implementation of the control system, which included integrating PLCs and robotic components. I focused on ensuring the system operated efficiently at high speeds, achieving a rate of over one part per second.</p>
+    </div>
+</div>
+
+<div class="project-card">
+    <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/BallLight.gif" alt="Ball Light GIF">
+    <div class="content">
+        <h3>Ball Cup Light Automation</h3>
+		<p>I handled all the electrical and programming work for the UV inspection system at Ball Corporation. This included creating the line diagrams and ensuring that the system met the power requirements set by the relevant certifying bodies, including the National Electrical Code (NEC) and UL standards. My work ensured that the system operated reliably and met production standards for detecting micro-holes in cups at high speeds.</p>
+    </div>
+</div>
+
+<div class="project-card">
+    <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/Autocad.gif" alt="AutoCAD GIF">
+    <div class="content">
+        <h3>AutoCAD Excel Integration</h3>
+        <p>I created Excel macros for automated electrical design generation, which reduced the time required to produce I/O line diagrams. These tools helped ensure accuracy and consistency across large-scale projects.</p>
+    </div>
+</div>
+<!-- Side-by-Side Gallery -->
+<div class="side-by-side-gallery">
+    <div class="images">
+        <img src="https://github.com/MichaelMaxwell91/project-showcase/raw/main/Videos/Chip1.jpg" alt="Chip Image 1">
+        <img src="https://github.com/MichaelMaxwell91/project-showcase/raw/main/Videos/Chip2.jpg" alt="Chip Image 2">
+    </div>
+    <div class="description">
+        <h3>Chip Redesign for Ink Pumps</h3>
+        <p>During the COVID circuit shortage, I redesigned a chip for ink pumps. The original circuit would start motors at 16V, causing excessive pressure and resulting in head weeping. When dropping to 12V, the motors would not run. By switching to PWM, I was able to run the motors at 12V without adjusting the voltage, reducing chip costs and significantly improving production efficiency. This change reduced construction time from 4 hours per board to 4 boards per hour.</p>
+    </div>
+</div>
+
+<div class="project-card">
+    <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/Pressure.gif" alt="Pressure Control GIF">
+    <div class="content">
+        <h3>Pressure Control System</h3>
+<p>I designed a new pressure control board that replaced Brushless DC motors with stepper motors. This solution maintained pressure within 0.1 mBars of the target, improving the system's stability and reliability. Unlike Brushless DC motors, which would oscillate while attempting to maintain pressure and risk premature burnout, the stepper motors provided much more stable performance.</p>
+    </div>
+</div>
+
+<div class="project-card">
+    <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/Tetris.gif" alt="Tetris Game GIF">
+    <div class="content">
+        <h3>Tetris Vision Project</h3>
+        <p>Using OpenCV, I explored creating a software-based recreation of a live Tetris game board. This project was a learning opportunity that allowed me to experiment with vision systems and real-time data processing.</p>
+    </div>
+</div>
+
+<div class="project-card">
+    <img src="https://raw.githubusercontent.com/MichaelMaxwell91/project-showcase/main/Videos/c_game.gif" alt="C Game GIF">
+    <div class="content">
+        <h3>Weekend Game Project</h3>
+        <p>As a personal challenge, I created a simple game in C++ without using existing game engines. This project was a way to deepen my understanding of low-level programming and algorithm design.</p>
+    </div>
+</div>
+
+
+
     </div>
 </body>
 </html>
